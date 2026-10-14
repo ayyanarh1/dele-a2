@@ -1,0 +1,226 @@
+{
+  "vocab": {
+    "Saludos": [
+      ["hola", "hello"], ["buenos días", "good morning"], ["buenas tardes", "good afternoon"],
+      ["buenas noches", "good evening / good night"], ["adiós", "goodbye"], ["hasta luego", "see you later"],
+      ["por favor", "please"], ["gracias", "thank you"], ["de nada", "you're welcome"],
+      ["perdón", "sorry / excuse me"], ["encantado / encantada", "pleased to meet you"], ["¿cómo te llamas?", "what's your name?"]
+    ],
+    "Familia": [
+      ["el padre", "father"], ["la madre", "mother"], ["el hermano", "brother"], ["la hermana", "sister"],
+      ["el hijo", "son"], ["la hija", "daughter"], ["el abuelo", "grandfather"], ["la abuela", "grandmother"],
+      ["el marido", "husband"], ["la mujer", "wife"], ["el tío", "uncle"], ["el primo", "cousin (male)"]
+    ],
+    "Casa": [
+      ["la cocina", "kitchen"], ["el dormitorio", "bedroom"], ["el baño", "bathroom"], ["el salón", "living room"],
+      ["la ventana", "window"], ["la puerta", "door"], ["la mesa", "table"], ["la silla", "chair"],
+      ["la cama", "bed"], ["el alquiler", "rent"], ["el piso", "flat / apartment"], ["el vecino", "neighbour"]
+    ],
+    "Comida": [
+      ["el pan", "bread"], ["el agua", "water"], ["la leche", "milk"], ["la carne", "meat"],
+      ["el pescado", "fish (as food)"], ["la fruta", "fruit"], ["las verduras", "vegetables"], ["el huevo", "egg"],
+      ["el desayuno", "breakfast"], ["la comida", "lunch / food"], ["la cena", "dinner"], ["la cuenta", "the bill"]
+    ],
+    "Trabajo": [
+      ["el trabajo", "job / work"], ["el jefe", "boss"], ["el compañero", "colleague"], ["la oficina", "office"],
+      ["el sueldo", "salary"], ["el contrato", "contract"], ["la entrevista", "interview"], ["el horario", "timetable / working hours"],
+      ["las vacaciones", "holidays"], ["el currículum", "CV / résumé"], ["trabajar", "to work"], ["buscar trabajo", "to look for a job"]
+    ],
+    "Salud": [
+      ["el médico", "doctor"], ["el hospital", "hospital"], ["la farmacia", "pharmacy"], ["la receta", "prescription"],
+      ["la cabeza", "head"], ["el estómago", "stomach"], ["me duele", "it hurts (me)"], ["la fiebre", "fever"],
+      ["el resfriado", "a cold"], ["la cita", "appointment"], ["enfermo / enferma", "ill / sick"], ["urgencias", "A&E / emergency room"]
+    ],
+    "Ciudad y transporte": [
+      ["el autobús", "bus"], ["el tren", "train"], ["la estación", "station"], ["el billete", "ticket"],
+      ["la parada", "stop (bus)"], ["la calle", "street"], ["la plaza", "square"], ["a la derecha", "on the right"],
+      ["a la izquierda", "on the left"], ["todo recto", "straight ahead"], ["cerca", "near"], ["lejos", "far"]
+    ],
+    "Tiempo y calendario": [
+      ["hoy", "today"], ["mañana", "tomorrow"], ["ayer", "yesterday"], ["la semana", "week"],
+      ["el mes", "month"], ["el año", "year"], ["el fin de semana", "weekend"], ["hace calor", "it's hot"],
+      ["hace frío", "it's cold"], ["llueve", "it's raining"], ["temprano", "early"], ["tarde", "late"]
+    ],
+    "Compras": [
+      ["la tienda", "shop"], ["el precio", "price"], ["barato", "cheap"], ["caro", "expensive"],
+      ["¿cuánto cuesta?", "how much is it?"], ["la talla", "size (clothes)"], ["pagar", "to pay"], ["en efectivo", "in cash"],
+      ["con tarjeta", "by card"], ["el descuento", "discount"], ["abierto", "open"], ["cerrado", "closed"]
+    ],
+    "Trámites": [
+      ["el formulario", "form"], ["rellenar", "to fill in"], ["firmar", "to sign"], ["la ventanilla", "service counter / window"],
+      ["la cola", "queue"], ["el plazo", "deadline / time limit"], ["la fotocopia", "photocopy"], ["el certificado", "certificate"],
+      ["el pasaporte", "passport"], ["la cita previa", "prior appointment"], ["Correos", "the post office"], ["la cuenta bancaria", "bank account"]
+    ]
+  },
+
+  "grammar": [
+    {"topic": "Ser / estar", "s": "Mi hermana ___ médica.", "en": "My sister is a doctor.", "options": ["es", "está"], "answer": 0, "explain": "Profesiones → SER."},
+    {"topic": "Ser / estar", "s": "Madrid ___ en el centro de España.", "en": "Madrid is in the centre of Spain.", "options": ["es", "está"], "answer": 1, "explain": "Ubicación de cosas o lugares → ESTAR."},
+    {"topic": "Ser / estar", "s": "Hoy ___ muy cansado.", "en": "Today I'm very tired.", "options": ["soy", "estoy"], "answer": 1, "explain": "Estados temporales → ESTAR."},
+    {"topic": "Ser / estar", "s": "¿De dónde ___ (tú)?", "en": "Where are you from?", "options": ["eres", "estás"], "answer": 0, "explain": "Origen → SER."},
+    {"topic": "Ser / estar", "s": "La sopa ___ fría.", "en": "The soup is cold.", "options": ["es", "está"], "answer": 1, "explain": "Estado en un momento concreto → ESTAR."},
+    {"topic": "Ser / estar", "s": "La fiesta ___ en mi casa.", "en": "The party is (takes place) at my house.", "options": ["es", "está"], "answer": 0, "explain": "¡Atención! Para eventos (dónde tiene lugar algo) se usa SER."},
+
+    {"topic": "Presente", "s": "Yo ___ dos hijos. (tener)", "en": "I have two children.", "options": ["tengo", "tiene", "teno"], "answer": 0, "explain": "Tener es irregular en la 1.ª persona: tengo."},
+    {"topic": "Presente", "s": "Nosotros ___ en Valencia. (vivir)", "en": "We live in Valencia.", "options": ["vivemos", "vivimos", "viven"], "answer": 1, "explain": "Verbos en -ir: nosotros → -imos."},
+    {"topic": "Presente", "s": "¿A qué hora ___ a trabajar? (tú, empezar)", "en": "What time do you start work?", "options": ["empezas", "empiezas", "empieza"], "answer": 1, "explain": "Empezar diptonga e → ie: empiezo, empiezas, empieza..."},
+    {"topic": "Presente", "s": "Yo no ___ la respuesta. (saber)", "en": "I don't know the answer.", "options": ["sabo", "sé", "sabe"], "answer": 1, "explain": "Saber es irregular: yo sé."},
+    {"topic": "Presente", "s": "Mis hijos ___ al colegio en autobús. (ir)", "en": "My children go to school by bus.", "options": ["van", "vamos", "iren"], "answer": 0, "explain": "Ir: voy, vas, va, vamos, vais, van."},
+
+    {"topic": "Pasado", "s": "Ayer ___ paella con mis amigos. (yo, comer)", "en": "Yesterday I ate paella with my friends.", "options": ["como", "comí", "comía"], "answer": 1, "explain": "«Ayer» + acción terminada → pretérito indefinido."},
+    {"topic": "Pasado", "s": "El año pasado mis padres ___ a México. (viajar)", "en": "Last year my parents travelled to Mexico.", "options": ["viajaron", "viajaban", "viajan"], "answer": 0, "explain": "Acción terminada en un tiempo terminado → indefinido."},
+    {"topic": "Pasado", "s": "¿Qué ___ el fin de semana pasado? (tú, hacer)", "en": "What did you do last weekend?", "options": ["haciste", "hiciste", "hizo"], "answer": 1, "explain": "Hacer es irregular en indefinido: hice, hiciste, hizo..."},
+    {"topic": "Pasado", "s": "Anoche ___ al cine. (yo, ir)", "en": "Last night I went to the cinema.", "options": ["fui", "fue", "voy"], "answer": 0, "explain": "Ir en indefinido: fui, fuiste, fue..."},
+    {"topic": "Pasado", "s": "Cuando era niño, ___ en la calle todos los días. (yo, jugar)", "en": "When I was a child, I played in the street every day.", "options": ["jugué", "jugaba", "juego"], "answer": 1, "explain": "Hábitos en el pasado → pretérito imperfecto."},
+    {"topic": "Pasado", "s": "Todos los veranos ___ a la playa con mis abuelos. (nosotros, ir)", "en": "Every summer we used to go to the beach with my grandparents.", "options": ["fuimos", "íbamos", "vamos"], "answer": 1, "explain": "«Todos los veranos» indica costumbre → imperfecto."},
+    {"topic": "Pasado", "s": "Hoy ___ a las siete. (yo, levantarse)", "en": "Today I got up at seven.", "options": ["me he levantado", "me levantaba", "me levanto"], "answer": 0, "explain": "En España, con «hoy», «esta mañana», «este año»… se usa el pretérito perfecto."},
+    {"topic": "Pasado", "s": "¿___ estado alguna vez en Sevilla?", "en": "Have you ever been to Seville?", "options": ["Has", "Hayas", "Estás"], "answer": 0, "explain": "Pretérito perfecto: haber (he, has, ha...) + participio."},
+
+    {"topic": "Por / para", "s": "Este regalo es ___ ti.", "en": "This present is for you.", "options": ["por", "para"], "answer": 1, "explain": "Destinatario → PARA."},
+    {"topic": "Por / para", "s": "Gracias ___ tu ayuda.", "en": "Thanks for your help.", "options": ["por", "para"], "answer": 0, "explain": "Causa / agradecimiento → POR."},
+    {"topic": "Por / para", "s": "Estudio español ___ obtener la nacionalidad.", "en": "I study Spanish (in order) to get citizenship.", "options": ["por", "para"], "answer": 1, "explain": "Finalidad (para + infinitivo) → PARA."},
+    {"topic": "Por / para", "s": "Me gusta pasear ___ el parque.", "en": "I like walking through the park.", "options": ["por", "para"], "answer": 0, "explain": "Movimiento a través de un lugar → POR."},
+    {"topic": "Por / para", "s": "Te llamo ___ la tarde.", "en": "I'll call you in the afternoon.", "options": ["por", "para"], "answer": 0, "explain": "Partes del día: por la mañana, por la tarde, por la noche."},
+
+    {"topic": "Artículos", "s": "___ agua del grifo es buena.", "en": "Tap water is good.", "options": ["El", "La", "Los"], "answer": 0, "explain": "«Agua» es femenino, pero lleva «el» porque empieza por «a» tónica: el agua fría."},
+    {"topic": "Artículos", "s": "___ problema es muy difícil.", "en": "The problem is very difficult.", "options": ["El", "La"], "answer": 0, "explain": "Muchas palabras en -ma son masculinas: el problema, el tema, el idioma."},
+    {"topic": "Artículos", "s": "Me duele ___ mano.", "en": "My hand hurts.", "options": ["el", "la"], "answer": 1, "explain": "«Mano» es femenino aunque termina en -o: la mano."},
+
+    {"topic": "Gustar", "s": "A mí ___ gustan los tomates.", "en": "I like tomatoes.", "options": ["me", "mi", "yo"], "answer": 0, "explain": "A mí ME gusta(n), a ti TE, a él LE, a nosotros NOS, a vosotros OS, a ellos LES."},
+    {"topic": "Gustar", "s": "A nosotros nos ___ el cine.", "en": "We like the cinema.", "options": ["gusta", "gustan", "gustamos"], "answer": 0, "explain": "El verbo concuerda con lo que gusta (el cine → singular)."},
+    {"topic": "Gustar", "s": "A mis padres les ___ las películas españolas.", "en": "My parents like Spanish films.", "options": ["gusta", "gustan"], "answer": 1, "explain": "Las películas → plural → gustan."},
+
+    {"topic": "Pronombres", "s": "¿Tienes el libro? Sí, ___ tengo.", "en": "Do you have the book? Yes, I have it.", "options": ["lo", "la", "le"], "answer": 0, "explain": "Objeto directo masculino singular → LO."},
+    {"topic": "Pronombres", "s": "¿Compraste las entradas? Sí, ___ compré ayer.", "en": "Did you buy the tickets? Yes, I bought them yesterday.", "options": ["los", "las", "les"], "answer": 1, "explain": "Objeto directo femenino plural → LAS."},
+
+    {"topic": "Hay / está", "s": "En mi barrio ___ un supermercado.", "en": "There is a supermarket in my neighbourhood.", "options": ["hay", "está", "es"], "answer": 0, "explain": "Existencia de algo (un/una, números) → HAY."},
+    {"topic": "Hay / está", "s": "El supermercado ___ al lado del banco.", "en": "The supermarket is next to the bank.", "options": ["hay", "está"], "answer": 1, "explain": "Ubicación de algo concreto (el/la) → ESTAR."},
+
+    {"topic": "Muy / mucho", "s": "Hoy hace ___ calor.", "en": "It's very hot today.", "options": ["muy", "mucho"], "answer": 1, "explain": "Con sustantivos (calor) → MUCHO."},
+    {"topic": "Muy / mucho", "s": "Tu casa es ___ bonita.", "en": "Your house is very pretty.", "options": ["muy", "mucho"], "answer": 0, "explain": "Con adjetivos y adverbios → MUY."},
+
+    {"topic": "Imperativo", "s": "___ la ventana, por favor. (tú, abrir)", "en": "Open the window, please.", "options": ["Abre", "Abres", "Abrir"], "answer": 0, "explain": "Imperativo de tú = 3.ª persona del presente: abre, come, habla."},
+    {"topic": "Imperativo", "s": "___ aquí, por favor. (usted, firmar)", "en": "Sign here, please.", "options": ["Firma", "Firme", "Firmar"], "answer": 1, "explain": "Imperativo de usted: -ar → -e (firme), -er/-ir → -a (coma, escriba)."},
+
+    {"topic": "Futuro y perífrasis", "s": "Mañana ___ a visitar a mis padres.", "en": "Tomorrow I'm going to visit my parents.", "options": ["voy", "estoy", "vengo"], "answer": 0, "explain": "Planes: ir a + infinitivo."},
+    {"topic": "Futuro y perífrasis", "s": "Ahora no puedo hablar, ___ comiendo.", "en": "I can't talk now, I'm eating.", "options": ["soy", "estoy", "hay"], "answer": 1, "explain": "Acción en desarrollo: estar + gerundio."},
+
+    {"topic": "Comparativos", "s": "Madrid es ___ grande que Toledo.", "en": "Madrid is bigger than Toledo.", "options": ["más", "tan", "muy"], "answer": 0, "explain": "Superioridad: más + adjetivo + que."},
+    {"topic": "Comparativos", "s": "Mi hermano es tan alto ___ yo.", "en": "My brother is as tall as me.", "options": ["que", "como", "de"], "answer": 1, "explain": "Igualdad: tan + adjetivo + como."}
+  ],
+
+  "reading": [
+    {
+      "title": "Anuncio: se alquila piso",
+      "en_title": "Advert: flat for rent",
+      "text": "SE ALQUILA PISO en el centro de Zaragoza.\nTres dormitorios, dos baños, cocina equipada y terraza.\n750 € al mes, gastos de comunidad incluidos.\nNo se admiten mascotas.\nDisponible a partir del 1 de noviembre.\nLlamar por las tardes al 600 123 456.",
+      "questions": [
+        {"q": "¿Cuántos dormitorios tiene el piso?", "options": ["Dos", "Tres", "Cuatro"], "answer": 1},
+        {"q": "¿Se puede vivir en el piso con un perro?", "options": ["Sí", "No", "El anuncio no lo dice"], "answer": 1},
+        {"q": "¿Cuándo se puede entrar a vivir?", "options": ["Ahora mismo", "Desde el 1 de noviembre", "En diciembre"], "answer": 1},
+        {"q": "¿Cuándo hay que llamar?", "options": ["Por la mañana", "Por la tarde", "Por la noche"], "answer": 1},
+        {"q": "Los gastos de comunidad...", "options": ["están incluidos en el precio", "cuestan 750 € más", "los paga el propietario aparte"], "answer": 0}
+      ]
+    },
+    {
+      "title": "Correo de Marta",
+      "en_title": "Email from Marta",
+      "text": "Hola, Laura:\n¿Qué tal? Te escribo desde Granada. Llegué el sábado y estoy en un hotel cerca de la catedral. Ayer visité la Alhambra con un grupo; fue increíble, pero había muchísima gente.\nHoy hace mucho calor, así que por la mañana he ido a un museo y por la tarde voy a descansar en el hotel. El jueves vuelvo a Madrid en tren.\n¿Quedamos el viernes para cenar?\nUn beso,\nMarta",
+      "questions": [
+        {"q": "¿Dónde se aloja Marta?", "options": ["En casa de una amiga", "En un hotel cerca de la catedral", "En un hotel cerca de la Alhambra"], "answer": 1},
+        {"q": "¿Qué hizo Marta ayer?", "options": ["Visitó la Alhambra", "Fue a un museo", "Descansó en el hotel"], "answer": 0},
+        {"q": "¿Por qué fue a un museo esta mañana?", "options": ["Porque llovía", "Porque hacía mucho calor", "Porque estaba cansada"], "answer": 1},
+        {"q": "¿Cómo vuelve a Madrid?", "options": ["En avión", "En autobús", "En tren"], "answer": 2},
+        {"q": "¿Qué le propone a Laura?", "options": ["Ir a Granada", "Cenar juntas el viernes", "Visitar un museo"], "answer": 1}
+      ]
+    },
+    {
+      "title": "Aviso del ayuntamiento",
+      "en_title": "Town hall notice",
+      "text": "EL AYUNTAMIENTO INFORMA\nDel 10 al 21 de marzo, la Oficina de Atención al Ciudadano cambia su horario: abrirá de lunes a viernes de 9:00 a 14:00. Por las tardes estará cerrada.\nPara empadronarse es necesario pedir cita previa por internet o por teléfono (010) y llevar el pasaporte o el NIE y el contrato de alquiler.",
+      "questions": [
+        {"q": "Durante esas fechas, por la tarde la oficina...", "options": ["abre de 16:00 a 19:00", "está cerrada", "solo abre los viernes"], "answer": 1},
+        {"q": "¿Qué días abre la oficina?", "options": ["De lunes a viernes", "De lunes a sábado", "Todos los días"], "answer": 0},
+        {"q": "¿Cómo se pide la cita previa?", "options": ["Solo en la oficina", "Por internet o por teléfono", "Por correo postal"], "answer": 1},
+        {"q": "Para empadronarse hay que llevar...", "options": ["solo el pasaporte", "el pasaporte o el NIE y el contrato de alquiler", "una foto y el contrato de trabajo"], "answer": 1}
+      ]
+    },
+    {
+      "title": "Me presento: Ahmed",
+      "en_title": "Introducing myself: Ahmed",
+      "text": "Me llamo Ahmed y soy de Marruecos. Vivo en Málaga desde hace seis años con mi mujer y mis dos hijas.\nTrabajo de cocinero en un restaurante: empiezo a las doce y termino a las cinco, y vuelvo por la noche, de ocho a once. Los lunes no trabajo. Ese día voy a clase de español en una academia cerca de mi casa porque en mayo quiero hacer el examen DELE A2.",
+      "questions": [
+        {"q": "¿Cuánto tiempo lleva Ahmed en Málaga?", "options": ["Dos años", "Seis años", "Once años"], "answer": 1},
+        {"q": "¿Cuál es su trabajo?", "options": ["Camarero", "Cocinero", "Profesor"], "answer": 1},
+        {"q": "¿Qué día descansa?", "options": ["El lunes", "El sábado", "El domingo"], "answer": 0},
+        {"q": "¿Por qué estudia español?", "options": ["Porque quiere hacer el DELE A2", "Porque lo pide su jefe", "Porque quiere ser profesor"], "answer": 0}
+      ]
+    }
+  ],
+
+  "listening": [
+    ["Quiero pedir una cita con el médico.", "I want to make an appointment with the doctor."],
+    ["¿A qué hora sale el próximo tren a Sevilla?", "What time does the next train to Seville leave?"],
+    ["Me duele la cabeza desde ayer.", "I've had a headache since yesterday."],
+    ["Vivo en un piso pequeño cerca del centro.", "I live in a small flat near the centre."],
+    ["¿Puede repetirlo más despacio, por favor?", "Can you repeat it more slowly, please?"],
+    ["Necesito rellenar este formulario.", "I need to fill in this form."],
+    ["El supermercado cierra a las nueve y media.", "The supermarket closes at half past nine."],
+    ["Mis hijos van al colegio en autobús.", "My children go to school by bus."],
+    ["¿Cuánto cuesta un billete de ida y vuelta?", "How much is a return ticket?"],
+    ["Trabajo de lunes a viernes por la mañana.", "I work Monday to Friday in the mornings."],
+    ["El fin de semana pasado fuimos a la playa.", "Last weekend we went to the beach."],
+    ["Hoy hace mucho frío y está lloviendo.", "Today it's very cold and it's raining."],
+    ["¿Dónde está la parada de metro más cercana?", "Where is the nearest metro stop?"],
+    ["Quisiera abrir una cuenta en el banco.", "I would like to open a bank account."],
+    ["Llevo tres años estudiando español.", "I've been studying Spanish for three years."],
+    ["La farmacia está al lado del ayuntamiento.", "The pharmacy is next to the town hall."],
+    ["¿Me trae la cuenta, por favor?", "Could you bring me the bill, please?"],
+    ["Mañana tengo una entrevista de trabajo.", "Tomorrow I have a job interview."],
+    ["Busco un piso de dos dormitorios.", "I'm looking for a two-bedroom flat."],
+    ["Me gustaría reservar una mesa para cuatro personas.", "I'd like to book a table for four people."]
+  ],
+
+  "writing": [
+    {
+      "title": "Invitación de cumpleaños",
+      "prompt": "Escribe un correo a un amigo para invitarlo a tu fiesta de cumpleaños. Explica cuándo y dónde es, qué vais a hacer y cómo llegar.",
+      "en": "Write an email inviting a friend to your birthday party: when and where, what you'll do, how to get there.",
+      "words": [60, 80],
+      "tips": ["Querido/a...", "Te escribo para...", "Va a ser el sábado...", "Vamos a...", "Puedes venir en...", "¡Espero verte!"],
+      "model": "Querido Pablo:\n¿Qué tal estás? Te escribo para invitarte a mi fiesta de cumpleaños. Va a ser el sábado 15 de junio a las nueve de la noche en mi casa. Vamos a cenar, escuchar música y bailar un poco. También van a venir mis compañeros de trabajo. Para llegar, puedes coger el autobús número 7 y bajar en la plaza Mayor; mi casa está muy cerca. ¿Puedes traer algo de beber?\n¡Espero verte!\nUn abrazo,\nSara"
+    },
+    {
+      "title": "Mi último fin de semana",
+      "prompt": "Cuenta qué hiciste el fin de semana pasado: adónde fuiste, con quién y qué te gustó más.",
+      "en": "Describe what you did last weekend: where you went, who with, and what you liked most.",
+      "words": [60, 80],
+      "tips": ["El sábado por la mañana...", "Después...", "Por la tarde...", "Lo que más me gustó fue...", "Fue un fin de semana..."],
+      "model": "El fin de semana pasado fue muy tranquilo. El sábado por la mañana fui al mercado con mi mujer y compramos fruta y pescado. Después comimos en casa de mis suegros. Por la tarde dimos un paseo por el parque porque hacía muy buen tiempo. El domingo me levanté tarde, limpié la casa y por la noche vimos una película española en el cine. Lo que más me gustó fue el paseo, porque normalmente no tengo tiempo."
+    },
+    {
+      "title": "Problema en el piso",
+      "prompt": "Escribe un correo al propietario de tu piso. La calefacción no funciona. Explica el problema, desde cuándo pasa y pide una solución.",
+      "en": "Write to your landlord: the heating doesn't work. Explain the problem, since when, and ask for a solution.",
+      "words": [60, 80],
+      "tips": ["Estimado señor / Estimada señora...", "Le escribo porque...", "Desde el lunes...", "¿Podría...?", "Muchas gracias. Un saludo."],
+      "model": "Estimado señor García:\nLe escribo porque la calefacción del piso no funciona. Desde el lunes pasado no hay agua caliente en los radiadores y la casa está muy fría por las noches. Mis hijos son pequeños y estoy preocupada. Ya he revisado la caldera, pero no sé qué le pasa. ¿Podría enviar a un técnico esta semana? Estoy en casa todas las tardes a partir de las cinco.\nMuchas gracias.\nUn saludo,\nAna López"
+    },
+    {
+      "title": "Mi barrio",
+      "prompt": "Describe el barrio donde vives: cómo es, qué hay, qué te gusta y qué no te gusta.",
+      "en": "Describe your neighbourhood: what it's like, what's there, what you like and don't like.",
+      "words": [60, 80],
+      "tips": ["Vivo en un barrio...", "En mi barrio hay...", "Está cerca de...", "Lo que más me gusta es...", "Lo malo es que..."],
+      "model": "Vivo en un barrio tranquilo de Sevilla que se llama Triana. Está al lado del río Guadalquivir y muy cerca del centro. En mi barrio hay muchos bares, un mercado, dos colegios y un centro de salud. Los vecinos son muy simpáticos y siempre hay gente en la calle. Lo que más me gusta es pasear por el río por la tarde. Lo malo es que es difícil aparcar y en verano hace demasiado calor."
+    },
+    {
+      "title": "Cuando era pequeño/a",
+      "prompt": "Cuenta cómo era tu vida cuando eras niño/a: dónde vivías, cómo era tu familia y qué hacías normalmente.",
+      "en": "Describe your life as a child: where you lived, your family, what you usually did.",
+      "words": [60, 80],
+      "tips": ["Cuando era pequeño/a...", "Vivía en...", "Mi familia era...", "Todos los días...", "Los fines de semana..."],
+      "model": "Cuando era pequeño vivía en un pueblo cerca del mar con mis padres y mis tres hermanos. Nuestra casa era pequeña, pero tenía un jardín muy bonito. Mi padre era pescador y mi madre trabajaba en una tienda. Todos los días iba al colegio andando con mis hermanos. Por las tardes jugábamos al fútbol en la playa con los amigos. Los domingos comíamos en casa de mis abuelos. Era una vida sencilla y feliz."
+    }
+  ]
+}
